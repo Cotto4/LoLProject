@@ -1,0 +1,25 @@
+﻿@model LoLProject.Models.Champion
+
+
+@{
+    ViewBag.Title = "Create";
+}
+
+
+
+<h2>Create</h2>
+@using (Html.BeginForm())
+{
+    <div class="form-control">
+        @Html.TextBoxFor(m => m.ADBase)
+    </div>
+    <div class="form-control">
+        @Html.TextBoxFor(m => m.Name)
+    </div>
+    <div class="form-control">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-default" />
+        </div>
+    </div>
+
+} 

@@ -1,0 +1,21 @@
+﻿@model IEnumerable<LoLProject.Models.Champion>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(m => item.ADBase)
+            </td>
+
+        </tr>
+    }
+</table>
